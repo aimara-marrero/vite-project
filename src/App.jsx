@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className='image-container'>   
-        <img src="../public/t-done.svg" alt="logo" width="50" height="50" className='logo' />
+        <img src="/t-done.svg" alt="logo" width="50" height="50" className='logo' />
       </div>
       <div className="card-to-do">
         <h1>Lista de tareas</h1>

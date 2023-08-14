@@ -25,12 +25,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100px;
+
 }
 
 .card-to-do {
 	box-shadow:
-    0px 4px 8px rgba(0, 0, 0, 0.2),
-    0px 0px 4px rgba(0, 0, 0, 0.1) inset;
+		0px 4px 8px rgba(0, 0, 0, 0.2),
+		0px 0px 4px rgba(0, 0, 0, 0.1) inset;
 	padding: 25px;
 	border-radius: 5px;
 	flex-wrap: nowrap;
@@ -44,11 +45,13 @@ h1 {
 .counter-todos {
 	margin-top: 20px;
 	display: inline-block;
+
 }
 
 .counter-todos h3 {
 	font-weight: 500;
 	margin: 20px 0;
+
 }
 
 .counter-todos span {
@@ -68,6 +71,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+
 }
 
 .icon {
@@ -79,11 +83,13 @@ h1 {
 	top: 50%;
 	transform: translateY(-50%);
 
+
 }
 
 .input-wrapper {
 	position: relative;
 	width: 271px;
+
 }
 
 .input-add {
@@ -92,7 +98,7 @@ h1 {
 	padding: 10px 15px 10px 35px;
 	width: 100%;
 	border: none;
-	border-bottom: 2px solid #000;/
+	border-bottom: 2px solid #000;
 }
 
 
@@ -155,6 +161,7 @@ ul li form {
 	border: 2px solid var(--verde);
 	cursor: pointer;
 }
+
 .container-done.active {
 	background-color: var(--verde);
 }
@@ -193,3 +200,74 @@ ul li form {
 	font-family: inherit;
 }
 
+@media (min-width: 700px) {
+
+	body {
+
+		font-family: Poppins;
+		max-width: 1200px;
+		margin: 40px auto;
+		display: flex;
+		justify-content: center;
+	}
+
+	.card-to-do {
+	
+		padding: 25px;
+		border-radius: 20px;
+		width: 700px;
+		box-shadow: 0 0 10px 5px #0006 inset;
+	}
+
+	.counter-todos {
+		margin: 40px 0;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	.add-todo h3 {
+		font-size: 24px;
+	}
+
+	.form-container {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.input-wrapper {
+		width: 70%;
+	}
+
+	.input-add {
+		padding: 10px 15px 10px 35px;
+		flex: 1;
+		font-family: inherit;
+		font-size: 17px;
+		color: #555;
+
+		border: solid;
+
+		padding: 10px 15px 10px 35px;
+		width: 100%;
+
+		border-radius: 20px;
+
+	}
+
+
+	.btn-add {
+		border: none;
+		background-color: var(--naranja);
+		color: #fff;
+		padding: 5px 40px;
+		border-radius: 20px;
+		font-family: inherit;
+		cursor: pointer;
+		font-size: 17px;
+
+	}
+
+
+}
